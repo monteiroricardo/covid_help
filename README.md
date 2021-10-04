@@ -1,16 +1,55 @@
-# liax
+# CovidHelper
 
-A new Flutter project.
+Solução projetada e desenvolvida especialmente para concorrer a uma vaga na empresa Liax ♥
 
-## Getting Started
+## Sobre
 
-This project is a starting point for a Flutter application.
+CovidHelper é uma aplicação mobile que visa disponibilizar dados precisos e necessários para tomadas de decisão dentro do hâmbito nacional da saúde.
 
-A few resources to get you started if this is your first Flutter project:
+## Como utilizar
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### APK
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  Para instalar essa solução em seu smartphone **android** basta clicar no botão de download abaixo ↓
+  > OBS: Você está fazendo download de um app fora da Loja de aplicativos, está ação requer uma permissão especial de fontes desconhecidas, habilite essa opção em seu smartphone para proseguir! 
+  
+  <a href="https://github.com/monteiroricardo/CALC_IMC/blob/master/arquivos/app.apk">
+<img src="https://github.com/monteiroricardo/CALC_IMC/blob/master/arquivos/apk_btn.png" width="200" height="50" />
+</ a>
+
+### Código
+  
+  Para obter o código dessa solução basta baixar o arquivo ZIP disponível no repositório.
+  > OBS: É necessário ter o SDK Flutter instalado e configurado em sua máquina! 
+  
+## Tecnologias utilizadas
+
+### Gerais
+
+-  [Dart](https://dart.dev/)
+-  [VS code](https://code.visualstudio.com/)
+-  [Android Studio](https://developer.android.com/studio)
+-  [Postman](https://developer.android.com/studio)
+-  [HeideSQL](https://developer.android.com/studio)
+
+### Front-end 
+  
+-  [Flutter](https://flutter.dev/)
+    * [Brasil Fields](https://pub.dev/packages/brasil_fields)
+    * [Dio](https://pub.dev/packages/dio)
+    * [Fl Chart](https://pub.dev/packages/dio)
+    * [Feather Icons](https://pub.dev/packages/flutter_feather_icons)
+    * [Flutter SVG](https://pub.dev/packages/flutter_svg)
+    * [Font Awesome Icons](https://pub.dev/packages/font_awesome_flutter)
+    * [Lottie](https://pub.dev/packages/lottie)
+    * [Provider](https://pub.dev/packages/provider)
+    * [Shared Preferences](https://pub.dev/packages/shared_preferences)
+    
+ ### Back-end 
+  
+-  [Node](https://flutter.dev/)
+    * [express](https://pub.dev/packages/brasil_fields)
+-  [MySQL](https://flutter.dev/)
+  
+
+Feito com ♥ por Ricardo Monteiro  [Entrar em contato!](https://www.linkedin.com/in/ricardohmonteiro/)
