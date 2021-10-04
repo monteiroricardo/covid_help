@@ -6,6 +6,22 @@ Solução projetada e desenvolvida especialmente para concorrer a uma vaga na em
 
 CovidHelper é uma aplicação mobile que visa disponibilizar dados precisos e necessários para tomadas de decisão dentro do hâmbito nacional da saúde.
 
+### Visão Geral
+
+  * Gerenciamento de imunizantes
+  
+   Oferece a possibilidade de pesquisar em detalhes como foi disponibilizado os lotes de vacina para cada cidade pela a empresa correspondente, dentro de um estado específico, ou seja, saiba extamente quantas vacinas foram disponibilizadas para a cidade de São Paulo, no lote F540, da vacina Fizer.
+  
+   * Imunização do cidadão
+  
+  Consulte o progresso de vacinção de um cidadão pelo seu CPF, tenha em mãos qual vacina foi aplicada, em qual local, por qual profissional. Eu chamo de ficha de vacinação virtual! 
+  
+  * Dashboard
+    
+  Visualize dados precisos e atuais sobre a Covid 19 no Brasil. Compare dados, obtenha percentuais, tome decisões.
+
+  
+
 ## Como utilizar
 
 ### APK
