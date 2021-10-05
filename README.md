@@ -32,7 +32,7 @@ CovidHelper é uma aplicação mobile que visa disponibilizar dados precisos e n
   Para instalar essa solução em seu smartphone **android** basta clicar no botão de download abaixo ↓
   > OBS: Você está fazendo download de um app fora da Loja de aplicativos, está ação requer uma permissão especial de fontes desconhecidas, habilite essa opção em seu smartphone para proseguir! 
   
-  <a href="https://github.com/monteiroricardo/CALC_IMC/blob/master/arquivos/app.apk">
+  <a href="https://github.com/monteiroricardo/covid_help/blob/front-end/covid_help.apk">
 <img src="https://github.com/monteiroricardo/CALC_IMC/blob/master/arquivos/apk_btn.png" width="200" height="50" />
 </ a>
 
