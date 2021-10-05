@@ -10,7 +10,7 @@ CovidHelper é uma aplicação mobile que visa disponibilizar dados precisos e n
 
   * Gerenciamento de imunizantes
   
-   Oferece a possibilidade de pesquisar em detalhes como foi disponibilizado os lotes de vacina para cada cidade pela a empresa correspondente, dentro de um estado específico, ou seja, saiba extamente quantas vacinas foram disponibilizadas para a cidade de São Paulo, no lote F540, da vacina Fizer.
+   Oferece a possibilidade de pesquisar em detalhes como foi disponibilizado os lotes de vacina para cada cidade, filtrando pela empresa correspondente, dentro de um estado específico, ou seja, saiba extamente quantas vacinas foram disponibilizadas para a cidade de São Paulo, no lote F540, da vacina Fizer.
   
    * Imunização do cidadão
   
@@ -42,7 +42,6 @@ CovidHelper é uma aplicação mobile que visa disponibilizar dados precisos e n
 
 ### Gerais
 
--  [Dart](https://dart.dev/)
 -  [VS code](https://code.visualstudio.com/)
 -  [Android Studio](https://developer.android.com/studio)
 -  [Postman](https://developer.android.com/studio)
@@ -60,7 +59,8 @@ CovidHelper é uma aplicação mobile que visa disponibilizar dados precisos e n
     * [Lottie](https://pub.dev/packages/lottie)
     * [Provider](https://pub.dev/packages/provider)
     * [Shared Preferences](https://pub.dev/packages/shared_preferences)
-    
+-  [Dart](https://dart.dev/)
+  
  ### Back-end 
   
 -  [Node](https://flutter.dev/)
