@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class DoseLabelWidget extends StatelessWidget {
   final String adress;
-  final IconData? icon;
-
+  final String imagePath;
   const DoseLabelWidget({
     Key? key,
     required this.adress,
-    this.icon,
+    required this.imagePath,
   }) : super(key: key);
 
   @override
@@ -22,9 +22,10 @@ class DoseLabelWidget extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(right: 15),
-                child: Icon(
-                  icon,
-                  color: Color(0xFF1191DB),
+                child: SvgPicture.asset(
+                  imagePath,
+                  color: const Color(0xFF005586),
+                  height: 25,
                 ),
               ),
               const SizedBox(
@@ -34,13 +35,16 @@ class DoseLabelWidget extends StatelessWidget {
                 child: Text(
                   adress,
                   style: TextStyle(
-                    fontFamily: 'Bw-Bold',
+                    fontFamily: 'Bw-Medium',
                     fontSize: 15,
                     color: Colors.black.withOpacity(0.5),
                   ),
                 ),
               ),
             ],
+          ),
+          const Divider(
+            indent: 30,
           ),
         ],
       ),

@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:liax/app/views/peoples/widgets/dose_label_widget.dart';
 import 'package:liax/app/views/peoples/widgets/dose_title_widget.dart';
 import 'package:liax/app/views/peoples/widgets/search_button_widget.dart';
@@ -35,111 +34,90 @@ class PeoplesView extends StatelessWidget {
               const SizedBox(
                 height: 25,
               ),
-              Card(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                    15,
-                  ),
-                ),
-                elevation: 4,
-                child: Container(
-                  padding: const EdgeInsets.all(10),
-                  alignment: Alignment.center,
-                  margin: const EdgeInsets.all(10),
-                  child: Column(
-                    children: const [
-                      DoseTitleWidget(
-                        dose: 1,
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.mapMarker,
-                        adress: 'USB Real Parque',
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.notesMedical,
-                        adress: '8475157',
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.solidCalendar,
-                        adress: '10/11/2021',
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.box,
-                        adress: '20145',
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.industry,
-                        adress: 'Butantã',
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.userNurse,
-                        adress: 'Karen',
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.idCardAlt,
-                        adress: '457578',
-                      ),
-                    ],
-                  ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                alignment: Alignment.center,
+                margin: const EdgeInsets.all(10),
+                child: Column(
+                  children: const [
+                    DoseTitleWidget(
+                      dose: 1,
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/marker.svg',
+                      adress: 'USB Real Parque',
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/medical_code.svg',
+                      adress: '8475157',
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/calendar.svg',
+                      adress: '10/11/2021',
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/box.svg',
+                      adress: '20145',
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/company.svg',
+                      adress: 'Butantã',
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/stethoscope.svg',
+                      adress: 'Karen',
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/document.svg',
+                      adress: '457578',
+                    ),
+                  ],
                 ),
               ),
-              const Divider(
-                height: 25,
-                indent: 40,
-                endIndent: 40,
-              ),
-              Card(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                    15,
-                  ),
-                ),
-                elevation: 4,
-                child: Container(
-                  padding: const EdgeInsets.all(10),
-                  alignment: Alignment.center,
-                  margin: const EdgeInsets.all(10),
-                  child: Column(
-                    children: const [
-                      DoseTitleWidget(
-                        dose: 2,
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.mapMarker,
-                        adress: 'USB Real Parque',
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.notesMedical,
-                        adress: '8475157',
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.solidCalendar,
-                        adress: '10/11/2021',
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.box,
-                        adress: '20145',
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.industry,
-                        adress: 'Butantã',
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.userNurse,
-                        adress: 'Karen',
-                      ),
-                      DoseLabelWidget(
-                        icon: FontAwesomeIcons.idCardAlt,
-                        adress: '457578',
-                      ),
-                    ],
-                  ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                alignment: Alignment.center,
+                margin: const EdgeInsets.all(10),
+                child: Column(
+                  children: const [
+                    DoseTitleWidget(
+                      dose: 2,
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/marker.svg',
+                      adress: 'USB Real Parque',
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/medical_code.svg',
+                      adress: '8475157',
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/calendar.svg',
+                      adress: '10/11/2021',
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/box.svg',
+                      adress: '20145',
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/company.svg',
+                      adress: 'Butantã',
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/stethoscope.svg',
+                      adress: 'Karen',
+                    ),
+                    DoseLabelWidget(
+                      imagePath: 'assets/svgs/document.svg',
+                      adress: '457578',
+                    ),
+                  ],
                 ),
               )
             ],

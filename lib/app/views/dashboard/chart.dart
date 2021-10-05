@@ -1,6 +1,5 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:liax/app/styles/gradients.dart';
 
 class _LineChart extends StatelessWidget {
   const _LineChart();
@@ -159,6 +158,8 @@ class _LineChart extends StatelessWidget {
 }
 
 class LineChartSample1 extends StatefulWidget {
+  const LineChartSample1({Key? key}) : super(key: key);
+
   @override
   State<StatefulWidget> createState() => LineChartSample1State();
 }
@@ -181,7 +182,7 @@ class LineChartSample1State extends State<LineChartSample1> {
         child: Container(
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(10)),
-            gradient: Gradients.bkBlue,
+            color: Color(0xFF005586),
           ),
           child: Stack(
             children: <Widget>[

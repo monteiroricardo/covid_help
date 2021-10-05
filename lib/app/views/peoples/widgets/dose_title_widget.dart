@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DoseTitleWidget extends StatelessWidget {
   final int dose;
@@ -15,13 +14,11 @@ class DoseTitleWidget extends StatelessWidget {
       children: [
         Text(
           '$doseº Dose  ',
-          style: const TextStyle(
-              fontFamily: 'Bw-Bold', fontSize: 17, color: Colors.black54),
-        ),
-        const Icon(
-          FontAwesomeIcons.syringe,
-          color: Colors.black54,
-          size: 20,
+          style: TextStyle(
+            fontFamily: 'Bw-Bold',
+            fontSize: 17,
+            color: Colors.blue[900],
+          ),
         ),
       ],
     );

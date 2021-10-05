@@ -7,8 +7,8 @@ import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:liax/app/controllers/companies_controller.dart';
 import 'package:liax/app/helpers/size_helper.dart';
+import 'package:liax/app/models/lote_detail_model.dart';
 import 'package:liax/app/views/companies/widgets/drop_down_widget.dart';
-import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 
 class CompaniesView extends StatefulWidget {
@@ -21,6 +21,28 @@ class CompaniesView extends StatefulWidget {
 class _CompaniesViewState extends State<CompaniesView> {
   String state = 'Selecione um Estado';
   bool isLoading = true;
+  List<LoteDetailModel> lotes = [
+    LoteDetailModel(
+      city: 'Lorena',
+      producer: 'BioNTech',
+      quantity: 500,
+    ),
+    LoteDetailModel(
+      city: 'Aparecida',
+      producer: 'BioNTech',
+      quantity: 750,
+    ),
+    LoteDetailModel(
+      city: 'Guaratinguetá',
+      producer: 'BioNTech',
+      quantity: 1500,
+    ),
+    LoteDetailModel(
+      city: 'Roseira',
+      producer: 'BioNTech',
+      quantity: 200,
+    ),
+  ];
   openResults() {
     showModalBottomSheet(
       isScrollControlled: true,
@@ -97,10 +119,10 @@ class _CompaniesViewState extends State<CompaniesView> {
                       style: TextStyle(
                         fontFamily: 'Bw-Medium',
                         fontSize: 14,
-                        color: Color(0xff6A8199).withOpacity(0.8),
+                        color: const Color(0xff6A8199).withOpacity(0.8),
                       ),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Text(
                       'Estado',
                       style: TextStyle(
@@ -118,10 +140,10 @@ class _CompaniesViewState extends State<CompaniesView> {
                       style: TextStyle(
                         fontFamily: 'Bw-Medium',
                         fontSize: 14,
-                        color: Color(0xff6A8199).withOpacity(0.8),
+                        color: const Color(0xff6A8199).withOpacity(0.8),
                       ),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Text(
                       'Lote',
                       style: TextStyle(
@@ -139,7 +161,7 @@ class _CompaniesViewState extends State<CompaniesView> {
                       style: TextStyle(
                         fontFamily: 'Bw-Medium',
                         fontSize: 14,
-                        color: Color(0xff6A8199).withOpacity(0.8),
+                        color: const Color(0xff6A8199).withOpacity(0.8),
                       ),
                     ),
                   ],
@@ -186,37 +208,45 @@ class _CompaniesViewState extends State<CompaniesView> {
                 ),
                 Expanded(
                   child: ListView.separated(
-                    itemCount: 20,
+                    itemCount: lotes.length,
                     separatorBuilder: (ctx, index) => const Divider(),
                     itemBuilder: (ctx, index) => Row(
                       children: [
-                        Text(
-                          'Cidade',
-                          style: TextStyle(
-                            fontFamily: 'Bw-Regular',
-                            height: 1.1,
-                            fontSize: 14,
-                            color: const Color(0xff6A8199).withOpacity(0.8),
+                        Expanded(
+                          child: Text(
+                            lotes[index].city,
+                            style: TextStyle(
+                              fontFamily: 'Bw-Regular',
+                              height: 1.1,
+                              fontSize: 14,
+                              color: const Color(0xff6A8199).withOpacity(0.8),
+                            ),
                           ),
                         ),
-                        const Spacer(),
-                        Text(
-                          'Produtor',
-                          style: TextStyle(
-                            fontFamily: 'Bw-Regular',
-                            height: 1.1,
-                            fontSize: 14,
-                            color: const Color(0xff6A8199).withOpacity(0.8),
+                        const SizedBox(
+                          width: 15,
+                        ),
+                        Expanded(
+                          child: Text(
+                            lotes[index].producer,
+                            style: TextStyle(
+                              fontFamily: 'Bw-Regular',
+                              height: 1.1,
+                              fontSize: 14,
+                              color: const Color(0xff6A8199).withOpacity(0.8),
+                            ),
                           ),
                         ),
-                        const Spacer(),
-                        Text(
-                          (index * index + 2).toString(),
-                          style: TextStyle(
-                            fontFamily: 'Bw-Regular',
-                            height: 1.1,
-                            fontSize: 14,
-                            color: const Color(0xff6A8199).withOpacity(0.8),
+                        Expanded(
+                          child: Text(
+                            lotes[index].quantity.toString(),
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontFamily: 'Bw-Regular',
+                              height: 1.1,
+                              fontSize: 14,
+                              color: const Color(0xff6A8199).withOpacity(0.8),
+                            ),
                           ),
                         ),
                       ],
@@ -255,6 +285,7 @@ class _CompaniesViewState extends State<CompaniesView> {
                 height: 15,
               ),
               DropDownWidget(
+                imagePath: 'assets/svgs/company.svg',
                 icon: FontAwesomeIcons.industry,
                 onSelected: (value) {
                   companiesController.setCompanySelected(value);
@@ -268,7 +299,9 @@ class _CompaniesViewState extends State<CompaniesView> {
                 title: 'Empresa',
                 hint: companiesController.companySelected,
               ),
+              const Divider(),
               DropDownWidget(
+                imagePath: 'assets/svgs/map.svg',
                 icon: FontAwesomeIcons.mapMarker,
                 onSelected: (value) {
                   companiesController.setStateSelected(value);
@@ -277,29 +310,28 @@ class _CompaniesViewState extends State<CompaniesView> {
                 title: 'Estado',
                 hint: companiesController.stateSelected,
               ),
+              const Divider(),
               DropDownWidget(
+                imagePath: 'assets/svgs/box.svg',
                 isLote: true,
                 icon: FontAwesomeIcons.truckLoading,
                 onSelected: (value) {
                   companiesController.setLoteSelected(value);
                 },
-                items: Estados.listaEstadosSigla,
+                items: const ['457hF4', 'S45715', 'R75565', '98787'],
                 title: 'Lote',
                 hint: companiesController.loteSelected,
               ),
-              const SizedBox(
-                height: 15,
-              ),
-              Lottie.asset('assets/lotties/search.json', height: 250),
             ],
           ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: const Color(0xFF1191DB),
+        backgroundColor: Colors.white,
         onPressed: openResults,
         child: const Icon(
           FeatherIcons.search,
+          color: Color(0xFF1191DB),
         ),
       ),
     );
