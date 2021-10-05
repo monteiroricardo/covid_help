@@ -6,6 +6,8 @@ Solução projetada e desenvolvida especialmente para concorrer a uma vaga na em
 
 CovidHelper é uma aplicação mobile que visa disponibilizar dados precisos e necessários para tomadas de decisão dentro do hâmbito nacional da saúde.
 
+<img src="https://github.com/monteiroricardo/covid_help/blob/front-end/preview.png"/>
+
 ### Visão Geral
 
   * Gerenciamento de imunizantes
