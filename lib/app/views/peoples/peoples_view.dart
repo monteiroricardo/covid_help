@@ -32,45 +32,58 @@ class PeoplesView extends StatelessWidget {
               ),
               const SearchButtonWidget(),
               const SizedBox(
-                height: 25,
+                height: 10,
               ),
               Container(
                 padding: const EdgeInsets.all(10),
                 alignment: Alignment.center,
                 margin: const EdgeInsets.all(10),
                 child: Column(
-                  children: const [
-                    DoseTitleWidget(
+                  children: [
+                    Text(
+                      'Ricardo Henrique Silva Monteiro',
+                      style: TextStyle(
+                        fontFamily: 'Bw-Medium',
+                        fontSize: 20,
+                        color: Colors.black.withOpacity(
+                          0.60,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    const DoseTitleWidget(
                       dose: 1,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
-                    DoseLabelWidget(
+                    const DoseLabelWidget(
                       imagePath: 'assets/svgs/marker.svg',
                       adress: 'USB Real Parque',
                     ),
-                    DoseLabelWidget(
+                    const DoseLabelWidget(
                       imagePath: 'assets/svgs/medical_code.svg',
                       adress: '8475157',
                     ),
-                    DoseLabelWidget(
+                    const DoseLabelWidget(
                       imagePath: 'assets/svgs/calendar.svg',
                       adress: '10/11/2021',
                     ),
-                    DoseLabelWidget(
+                    const DoseLabelWidget(
                       imagePath: 'assets/svgs/box.svg',
                       adress: '20145',
                     ),
-                    DoseLabelWidget(
+                    const DoseLabelWidget(
                       imagePath: 'assets/svgs/company.svg',
                       adress: 'Butantã',
                     ),
-                    DoseLabelWidget(
+                    const DoseLabelWidget(
                       imagePath: 'assets/svgs/stethoscope.svg',
                       adress: 'Karen',
                     ),
-                    DoseLabelWidget(
+                    const DoseLabelWidget(
                       imagePath: 'assets/svgs/document.svg',
                       adress: '457578',
                     ),
